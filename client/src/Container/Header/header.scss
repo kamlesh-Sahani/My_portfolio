@@ -1,0 +1,106 @@
+.header {
+  background: url("../../assets/bgWhite.png");
+  background-size: cover;
+  background-repeat: repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 100px 20px;
+  align-items: center;
+
+  .badge {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    .badge-1,
+    .badge-2 {
+      padding: 20px 30px;
+      box-shadow: 0px 0px 20px rgb(196, 196, 196);
+      border-radius: 10px;
+      p {
+        color: rgb(131, 131, 131);
+      }
+    }
+    .badge-1 {
+      display: flex;
+      gap: 20px;
+      span {
+        font-size: 30px;
+        align-self: flex-start;
+      }
+    }
+    @media screen and (max-width: 1030px) {
+      align-self: flex-start;
+    }
+  }
+
+  .profile {
+    position: relative;
+    img{
+      z-index: 2;
+      width: 100%;
+      object-fit: contain;
+    }
+    .circle-image{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+
+    .icon-img {
+      height: 200px;
+      width: 200px;
+      background-color: #fff;
+      margin: 20px 0;
+      border-radius: 100%;
+      padding: 20px;
+      box-shadow: 0px 0px 20px rgb(196, 196, 196);
+
+      &:nth-child(1) {
+        height: 120px;
+        width: 120px;
+      }
+      &:nth-child(3) {
+        height: 140px;
+        width: 140px;
+      }
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+     
+    }
+
+    @media screen and (max-width: 1030px) {
+        flex-direction: row;
+        gap:20px;   
+    }
+    @media screen and (max-width: 600px) {
+        .icon-img{
+
+        gap: 10px;
+      &:nth-child(1) {
+        height: 80px;
+        width:80px;
+      }
+      &:nth-child(3) {
+        height: 110px;
+        width: 110px;
+      }
+      &:nth-child(3) {
+        height: 90px;
+        width: 90px;
+      }
+    }
+    }
+  }
+}

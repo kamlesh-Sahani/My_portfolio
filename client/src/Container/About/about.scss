@@ -1,0 +1,50 @@
+.about {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  .heading {
+    font-size: 50px;
+    text-align: center;
+    span {
+      color: rgb(73, 30, 159);
+    }
+
+    @media screen and (max-width: 700px) {
+        font-size: 30px;
+    }
+  }
+
+  .box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    div {
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 15px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        color: gray;
+      }
+    }
+  }
+}

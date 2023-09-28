@@ -1,0 +1,57 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 10px 100px;
+
+  h1 {
+    font-size: 50px;
+
+    span {
+      color: rgb(73, 30, 159);
+    }
+    @media screen and (max-width:700px) {
+      font-size: 20px;
+    }
+  }
+
+  .contact {
+    display: flex;
+    gap: 40px;
+
+    .box {
+      padding: 20px 30px;
+      border-radius: 10px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background-color: rgba(255, 0, 0, 0.144);
+      &:nth-child(2) {
+        background-color: rgba(98, 60, 188, 0.124);
+      }
+      &:nth-child(3){
+        background-color: rgba(137, 43, 226, 0.112);
+      }
+      img {
+        height: 100%;
+        object-fit: contain;
+
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+  }
+
+
+}
