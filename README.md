@@ -26,8 +26,8 @@ This portfolio showcases my work and skills through a dynamic and visually appea
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/kamlesh-Sahani/My_portfolio.git
+   cd My_portfolio
    ```
 
 2. **Install Dependencies:**
