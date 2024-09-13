@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'Portfolio',
 
-  projectId: process.env.REACT_APP_SANITY_PROJECT_ID,
-    dataset: process.env.REACT_APP_SANITY_DATASET,
+  projectId: process.env.SANITY_STUDIO_SANITY_PROJECT_ID,
+    dataset: process.env.SANITY_STUDIO_SANITY_DATASET,
 
   plugins: [structureTool(), visionTool()],
 
