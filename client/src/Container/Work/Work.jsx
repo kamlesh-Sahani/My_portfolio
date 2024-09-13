@@ -28,10 +28,30 @@ const Work = () => {
         My creative <span>Portfolio</span> Section
       </h1>
       <div className="btn">
-        <button onClick={() => setFilter("")}>All</button>
-        <button onClick={() => setFilter("full_stack")}>Full Stack</button>
-        <button onClick={() => setFilter("react_js")}>React js</button>
-        <button onClick={() => setFilter("others")}>Others</button>
+        <button
+          className={filter === "" ? "active" : ""}
+          onClick={() => setFilter("")}
+        >
+          All
+        </button>
+        <button
+          className={filter === "full_stack" ? "active" : ""}
+          onClick={() => setFilter("full_stack")}
+        >
+          Full Stack
+        </button>
+        <button
+          className={filter === "frontend" ? "active" : ""}
+          onClick={() => setFilter("frontend")}
+        >
+          Frontend
+        </button>
+        <button
+          className={filter === "backend" ? "active" : ""}
+          onClick={() => setFilter("backend")}
+        >
+          Backend
+        </button>
       </div>
       <div className="project-box">
         {work.length === 0 ? (

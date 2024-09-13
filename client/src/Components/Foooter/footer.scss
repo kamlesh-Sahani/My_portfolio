@@ -6,15 +6,17 @@
   flex-direction: column;
   gap: 40px;
   padding: 10px 100px;
-
+  margin-top: 20px;
   h1 {
     font-size: 50px;
-
+  
+   text-align: center;
     span {
       color: rgb(73, 30, 159);
     }
     @media screen and (max-width:700px) {
-      font-size: 20px;
+      font-size: 30px;
+      width: 90vw;
     }
   }
 

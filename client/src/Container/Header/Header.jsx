@@ -23,7 +23,7 @@ const Header = () => {
           </div>
         </div>
         <div className="badge-2">
-          <p>Mern Stack Developer</p>{" "}
+          <p>Full Stack Developer</p>{" "}
         </div>
       </motion.div>
 

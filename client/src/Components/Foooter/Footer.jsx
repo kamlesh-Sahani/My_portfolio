@@ -6,14 +6,17 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <div className="footer" id="Contact">
+      <div>
       <h1>
         Take coffee & <span>chat with me</span>
       </h1>
+      </div>
+      
       <div className="contact">
         <div className="box">
           <img src={mailIcon} alt="" />
-          <a href="mailto:alex20150001969@gmail.com">
-            alex20150001969@gmail.com
+          <a href="mailto:kamleshbca2005@gmail.com">
+            kamleshbca2005@gmail.com
           </a>
         </div>
         <div className="box">

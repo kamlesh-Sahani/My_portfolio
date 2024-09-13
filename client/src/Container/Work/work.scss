@@ -22,6 +22,7 @@
   .btn {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     button {
       padding: 10px 30px;
       background-color: #fff;
@@ -43,10 +44,14 @@
         transition: all 0.4s;
       }
       @media screen and (max-width: 700px) {
-        margin: 0 10px;
+        margin:  5px;
         font-size: 13px;
-        padding: 7px 22px;
+        padding: 7px 20px;
     }
+    }
+    .active{
+      background-color: rgb(73, 30, 159);
+      color: #fff;
     }
   }
 

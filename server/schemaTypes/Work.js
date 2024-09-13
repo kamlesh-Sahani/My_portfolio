@@ -33,8 +33,8 @@ export default {
             options: {
               list: [
                 { title: "full_stack", value: "full_stack" },
-                { title: "react_js", value: "react_js" },
-                { title: "others", value: "others" },
+                { title: "frontend", value: "frontend" },
+                { title: "backend", value: "backend" },
               ],
               layout: "radio", 
             },

@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 const Skill = () => {
   const [skill, setSkill] = useState([]);
   const [exp, setExp] = useState([]);
-  const [divWidth,setDivWidth] = useState(50);
   useEffect(() => {
     const fetchSkill = async () => {
       try {
@@ -15,7 +14,7 @@ const Skill = () => {
         const responseExp = await client.fetch(queryExp);
         setSkill(response);
         setExp(responseExp);
-        responseExp.length ===0? setDivWidth(80):setDivWidth(50);
+        
       } catch (error) {}
     };
 
@@ -33,7 +32,7 @@ const Skill = () => {
             coming <span>soon</span> 😊
           </h1>
         ) : (
-          <motion.div className="img-container"  style={{width:`${divWidth}%`}}>
+          <motion.div className="img-container"  >
             {skill.map((skill) => (
               <motion.div
                 className="img-box"
